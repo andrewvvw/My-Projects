@@ -1,0 +1,48 @@
+#List of variables start here----
+orderFlats = ["Bb", "Eb", "Ab", "Db", "Gb", "Cb", "Fb"]
+orderSharps = ["F#", "C#", "G#", "D#", "A#", "E#", "B#"]
+
+#App command starts here---
+startingPitch=input()
+
+#Start of Flat Keys
+if startingPitch == "F":
+    print(f"The flat you'll need for this key is: {orderFlats[:1]}")
+elif startingPitch == "Bb":
+    print(f"The flats you'll need for this key are: {orderFlats[:2]}")
+elif startingPitch == "Eb":
+    print(f"The flats you'll need for this key are: {orderFlats[:3]}")
+elif startingPitch == "Ab":
+    print(f"The flats you'll need for this key are: {orderFlats[:4]}")
+elif startingPitch == "Db":
+    print(f"The flats you'll need for this key are: {orderFlats[:5]}")
+elif startingPitch == "Gb":
+    print(f"The flats you'll need for this key are: {orderFlats[:6]}")
+elif startingPitch == "Cb":
+    print(f"The flats you'll need for this key are: {orderFlats[:7]}")
+
+#Start of Sharp Keys
+if startingPitch == "G":
+    print(f"The sharps you'll need for this key is: {orderSharps[:1]}")
+elif startingPitch == "D":
+    print(f"The sharps you'll need for this key are: {orderSharps[:2]}")
+elif startingPitch == "A":
+    print(f"The sharps you'll need for this key are: {orderSharps[:3]}")
+elif startingPitch == "E":
+    print(f"The sharps you'll need for this key are: {orderSharps[:4]}")
+elif startingPitch == "B":
+    print(f"The sharps you'll need for this key are: {orderSharps[:5]}")
+elif startingPitch == "F#":
+    print(f"The sharps you'll need for this key are: {orderSharps[:6]}")
+elif startingPitch == "C#":
+    print(f"The sharps you'll need for this key are: {orderSharps[:7]}")
+
+#Key of C Exception
+elif startingPitch == "C":
+    print(f"There are no accidentals in this key signature!")
+
+#Print if input is not a valid major key or enharmonic pitch
+else:
+    print("Invalid input!")
+
+print ("Done.")
