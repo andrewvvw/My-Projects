@@ -1,11 +1,11 @@
-#List of variables start here----
+#Order of flats & sharps on a musical staff
 orderFlats = ["Bb", "Eb", "Ab", "Db", "Gb", "Cb", "Fb"]
 orderSharps = ["F#", "C#", "G#", "D#", "A#", "E#", "B#"]
 
-#App command starts here---
-startingPitch=input()
+#Get a starting pitch from user
+startingPitch=input('Enter starting pitch: ')
 
-#Start of Flat Keys
+#Flat Keys
 if startingPitch == "F":
     print(f"The flat you'll need for this key is: {orderFlats[:1]}")
 elif startingPitch == "Bb":
@@ -20,9 +20,8 @@ elif startingPitch == "Gb":
     print(f"The flats you'll need for this key are: {orderFlats[:6]}")
 elif startingPitch == "Cb":
     print(f"The flats you'll need for this key are: {orderFlats[:7]}")
-
-#Start of Sharp Keys
-if startingPitch == "G":
+#Sharp Keys
+elif startingPitch == "G":
     print(f"The sharps you'll need for this key is: {orderSharps[:1]}")
 elif startingPitch == "D":
     print(f"The sharps you'll need for this key are: {orderSharps[:2]}")
@@ -36,13 +35,11 @@ elif startingPitch == "F#":
     print(f"The sharps you'll need for this key are: {orderSharps[:6]}")
 elif startingPitch == "C#":
     print(f"The sharps you'll need for this key are: {orderSharps[:7]}")
-
 #Key of C Exception
 elif startingPitch == "C":
     print(f"There are no accidentals in this key signature!")
 
 #Print if input is not a valid major key or enharmonic pitch
 else:
-    print("Invalid input!")
+    print("Sorry, invalid input! Please try again!")
 
-print ("Done.")
